@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}theoretical background}{2}{section.1}%
+\contentsline {paragraph}{}{2}{section*.2}%
+\contentsline {section}{\numberline {2}Data analysis}{4}{section.2}%
+\contentsline {paragraph}{Part A:}{4}{section*.3}%
+\contentsline {paragraph}{Part B}{5}{section*.8}%

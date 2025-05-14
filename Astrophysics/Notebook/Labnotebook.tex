@@ -1,0 +1,123 @@
+%===============================================
+% Lab Report Template for Astrophysics
+%===============================================
+\documentclass[11pt,a4paper]{article}
+
+%----------------------------
+% Encoding & Language
+%----------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+%----------------------------
+% Page Layout
+%----------------------------
+\usepackage[
+  a4paper,
+  left=25mm,
+  right=25mm,
+  top=25mm,
+  bottom=30mm,
+]{geometry}
+
+%----------------------------
+% Mathematics & Physics
+%----------------------------
+\usepackage{amsmath}       % improved math environments
+\usepackage{amssymb}       % extra math symbols
+\usepackage{mathtools}     % fixes and extensions to amsmath
+\usepackage{physics}       % physics notation (\abs, \dv, etc.)
+
+%----------------------------
+% Units & Numbers
+%----------------------------
+\usepackage{siunitx}       % SI units and number formatting
+\sisetup{
+  detect-all,
+  separate-uncertainty = true,
+  per-mode = symbol
+}
+
+%----------------------------
+% Graphics & Figures
+%----------------------------
+\usepackage{graphicx}      % includegraphics
+\usepackage{xcolor}        % color support
+\usepackage{float}         % [H] placement specifier
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[subrefformat=parens]{subcaption}  % subfigures
+
+%----------------------------
+% Tables
+%----------------------------
+\usepackage{booktabs}      % \toprule, \midrule, \bottomrule
+\usepackage{multirow}
+\usepackage{array}
+
+%----------------------------
+% Bibliography & Hyperlinks
+%----------------------------
+\usepackage[
+  backend=biber,
+  style=apa,
+  natbib=true
+]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage[
+  hidelinks,
+  pdfauthor={Elie Habib},
+  pdftitle={Astrophysics Lab Report},
+]{hyperref}
+
+%----------------------------
+% Miscellaneous
+%----------------------------
+\usepackage{microtype}     % typographical refinements
+\usepackage{enumitem}      % control over list spacing
+\usepackage{datetime2}     % date formatting
+\usepackage{titlesec}      % control of section headings
+
+%----------------------------
+% Title Page Definition
+%----------------------------
+
+\newcommand{\reporttitle}{Astrophysics Lab Report}
+\newcommand{\authorname}{Elie Habib and Jasmin Bsul}
+\newcommand{\instructor}{Sara Faris}
+\newcommand{\coursename}{Astrophysics Lab}
+
+%----------------------------
+% Document
+%----------------------------
+\begin{document}
+
+% Title page
+\begin{titlepage}
+  \centering
+  \vspace*{1cm}
+  {\Huge\bfseries \reporttitle \par}
+  \vspace{1.5cm}
+  {\Large\coursename \par}
+  \vspace{2cm}
+  {\Large\authorname \par}
+  \vfill
+  Instructor: \instructor\par
+\end{titlepage}
+
+% Table of Contents
+\cleardoublepage
+\pagenumbering{roman}
+\tableofcontents
+\cleardoublepage
+\pagenumbering{arabic}
+%============================
+
+\begin{abstract}
+This report presents an astrophysical investigation utilizing multi-wavelength photometric techniques to study distant galaxies. Fundamental concepts such as spectral energy distributions (SEDs), photometric redshift estimation, and galaxy classification based on broadband photometry are explored. The experiment relies on theoretical foundations, including the cosmological redshift phenomenon, blackbody radiation models, and stellar population synthesis, to interpret observational data. The methodology integrates theoretical models with observed magnitudes, enabling inference about galaxy properties that are otherwise inaccessible due to observational constraints. This approach highlights the significance of multi-band photometry as a powerful tool for probing galaxy evolution and cosmological parameters.
+\end{abstract}
+\section{Introduction}
+
+
+\end{document}

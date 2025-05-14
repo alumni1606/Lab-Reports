@@ -1,0 +1,237 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{bm}
+\usepackage[utf8]{inputenc}     % if you need it
+\usepackage[T1]{fontenc}        % if you need it
+% \usepackage{subcaption}         % defines the subfigure environment
+\usepackage{grffile}
+\usepackage{placeins}    
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{float}       % for [H]
+\usepackage{placeins}    % for \FloatBarrier
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+
+\title{Lab Notes: Thermo-couple Experiment}
+\author{Elie-Peter Habib}
+\date{\today}
+
+\begin{document}
+%--------------------------
+\maketitle
+
+\tableofcontents
+\pagebreak
+%--------------------------
+\section{theoretical background}
+\begin{abstract}
+  The thermoelectric phenomenon was discovered by Thomas Johann Seebeck in the early 1820s. Seebeck observed that when two different metals are joined together at two junctions, forming a closed loop, and these junctions are maintained at different temperatures, an electric current flows through the circuit. Initially, Seebeck mistakenly attributed this effect to magnetic polarization of the metals, but later it was correctly understood as an electromotive force (voltage) generated due to the temperature difference.
+\end{abstract}
+
+This voltage arises due to thermoelectric properties which depend on the interactions between heat flow and the behavior of electric charge carriers in metals. The phenomenon is broadly categorized under thermoelectric effects, with the Seebeck effect being one of the three primary effects:
+
+\begin{enumerate}
+    \item \textbf{Seebeck Effect}: Generation of a voltage when there is a temperature difference across the junctions of two different metals.
+    \item \textbf{Peltier Effect}: Heat absorption or release at the junction of two different metals when an electric current flows through the junction.
+    \item \textbf{Thomson Effect}: Heat absorption or release when current flows through a conductor subjected to a temperature gradient.
+\end{enumerate}
+
+A typical thermocouple consists of two dissimilar metals joined at both ends. When the junctions are at different temperatures ($T_1$ and $T_2$), a voltage ($V$) is generated, which can be measured. Importantly, a thermocouple measures the temperature difference, not absolute temperature. In order to measure the abolute tempreture one junction, called the reference junction, is maintained at a known temperature, and the other junction measures the unknown temperature.
+
+The voltage generated in the thermocouple is a function of the types of metal (spicifically thier band gap), call them A and B, and  the reference tempreture and the unkown tempreture. Although the first three are known so the voltage is actually a function of the unknown temperature.
+
+\paragraph{}
+As with every other function, the relation between the voltage and the temperature difference $V(\Delta T)$ can be approximated by a Taylor polynomial expansion:
+\begin{equation}
+    V(\Delta T) = C_0 + C_1 \Delta T + C_2 (\Delta T)^2 + \ldots
+\end{equation}
+
+the assumption made is that the relation will be close enought to a linear function::
+
+\begin{equation}
+    V = k \cdot \Delta T
+\end{equation}
+
+Here, $k$ is the Seebeck coefficient specific to the pair of metals used, and $\Delta T$ is the temperature difference between the two junctions.
+
+The thermoelectric voltage is a bulk property of the metals themselves and does not specifically originate at the junction interface. Thus, each metal inherently contributes to the total generated voltage when subjected to a temperature gradient.
+
+Thermocouples are widely used for temperature measurement due to their simplicity, quick response, robustness, and suitability for a wide temperature range.
+
+In practical applications, thermocouples require calibration. This involves accurately measuring the voltage output at known reference temperatures to create a calibration curve. With this curve, the unknown temperature can be determined from the measured voltage.
+
+In this laboratory, we will investigate the thermocouple's behavior by measuring voltage responses across various temperature differences. The thermocouple results will be compared against an alternative temperature measurement method using a thermistor, whose resistance varies predictably with temperature according to the relation:
+
+\begin{equation}
+    R = R_0 e^{\alpha \left(\frac{1}{T} - \frac{1}{T_0}\right)}
+\end{equation}
+
+Here, $R$ is the resistance at temperature $T$, $R_0$ is the resistance at reference temperature $T_0$, and $\alpha$ is a material-dependent constant.
+
+\pagebreak
+%--------------------------
+\section{Data analysis}
+\paragraph{Part A:}
+After the aquired data is fitted to the expectd linear fit the results are as follows:
+%------------------------------------------------
+% Part A results: two subfigures side by side
+%------------------------------------------------
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Part A results/linear fit.png}
+      \caption{linear fit}
+      \label{fig:partA1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Part A results/res.png}
+      \caption{residual fit}
+      \label{fig:partA2}
+    \end{subfigure}
+    \caption{Part A results}
+    \label{fig:partA_results}
+  \end{figure}
+  
+  %------------------------------------------------
+  % Table under the figure with four columns
+  %------------------------------------------------
+  \begin{table}[htbp]
+    \centering
+    \label{tab:partA_summary}
+    \begin{tabular}{@{}cccc@{}}
+      \toprule
+      $\chi ^2_{reduced}$ & P-probabilty & $a_1$ & $a_0$ \\
+      \midrule
+      $1.148$ & $0.327$ & $4.322 \cdot 10^{-2} \pm 2.794 \cdot 10^{-4}$ & $-0.09 \pm 0.012$ \\
+      \bottomrule
+    \end{tabular}
+    \caption{Part A results}
+  \end{table}
+Note that the results were fitted after removing the points arround  $\Delta T = 70$ because they showed a dramatic non linear behavior and a parabolic shape in the residual graph, that hints that it was most likely due to user error.
+Taking that into considaraton we see that the ersults agree well with the theoretical model.
+
+Now extracting the values of $V_{room}$ and $V_{nitrogen}$ using interpolation and extrapolation respectively, we get: 
+\begin{table}[htbp]
+    \centering
+    \label{Part A tempreture results}
+    \begin{tabular}{@{}cccc@{}}
+      \toprule
+       $V_{room}$ & $V_{nitrogen}$ \\
+      \midrule
+      $0.864 \pm 1.727 \cdot 10^{-7}$ & $-8.550 \pm 1.529 \cdot 10^{-6}$ \\
+      \bottomrule
+    \end{tabular}
+    \caption{Tempreture results}
+\end{table}
+%------------------------------------------------
+\pagebreak
+
+And performing the $N_\sigma$ test on both voltages we get:
+
+\begin{table}[htbp]
+    \centering
+    \label{Part A N-sigma test results}
+    \begin{tabular}{@{}cccc@{}}
+      \toprule
+       $N_{\sigma_{room}} $& $N_{\sigma_{nitrogen}}$ \\
+      \midrule
+      $0.079$ & $150.079$ \\
+      \bottomrule
+    \end{tabular}
+    \caption{N-sigma test results}
+
+\end{table}
+The test concluded that the calculated value of $V_{room}$ is relatively close to the theoretical value. That makes sence looking at the meassurements. 
+On the other hand, the test conluded that the calculated value of $V_{nitrogen}$ is far from the theoretiacl value. After taking a closer look it is possible to assume that the relatively small error calculated for the expiremental value is what caused the bad result. 
+%------------------------------------------------
+% Part B 
+%------------------------------------------------
+
+\paragraph{Part B}
+After fitting the data to the third order polynomial we get the following results:
+%------------------------------------------------
+
+%------------------------------------------------
+% Part A results: two subfigures side by side
+%------------------------------------------------
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Part B results/polynomial-fit.png}
+      \caption{polynomial fit}
+      \label{fig:partB1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.48\textwidth}
+      \includegraphics[width=\textwidth]{Part B results/polynomial residual.png}
+      \caption{residual fit}
+      \label{fig:partB2}
+    \end{subfigure}
+    \caption{Part B results}
+    \label{fig:partB_results}
+  \end{figure}
+  
+  %------------------------------------------------
+  % Table under the figure with four columns
+  %------------------------------------------------
+  \begin{table}[htbp]
+    \centering
+    \label{tab:partA_summary}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}cccccc@{}}
+      \toprule
+      $\chi ^2_{reduced}$ & P-probabilty & $a_0$ & $a_1$ & $a_2$ & $a_3$ \\
+      \midrule
+      1.197 & 0.2918 & $-0.02884 \pm 0.01377$ & $(3.8503 \times 10^{-2}) \pm (1.106 \times 10^{-3})$ & $(-1.969 \times 10^{-6}) \pm (2.7777 \times 10^{-5})$ & $(-3.552 \times 10^{-7}) \pm (1.861 \times 10^{-7})$ \\
+      \bottomrule
+    \end{tabular}
+    }%
+    \caption{Part B results}
+  \end{table}
+  We can see that the $\chi _{reduced}^2$ is close to 1, and the P-probabilty is greater than 0.05, that means that the fit is good and we can use it as an acurate way to measure the voltage for different tempretures. furthermore, $a_0$ is close to 0 taking into consieration its $47.7 \%$ error. 
+
+  \pagebreak
+  Now we can intrapolate and extrapolate different values of the voltage for different tempretures.
+  \begin{table}[htbp]
+    \centering
+    \label{Part B tempreture results}
+    \begin{tabular}{@{}cccc@{}}
+      \toprule
+       $V_{room}$ & $V_{nitrogen}$ \\
+      \midrule
+      $0.8162 \pm 0.0312$ & $-4.976 \pm 1.7687$ \\
+      \bottomrule
+    \end{tabular}
+    \caption{Tempreture results}
+\end{table}:
+
+And performing the $N_\sigma$ test on both voltages we get:
+
+\begin{table}[htbp]
+    \centering
+    \label{Part B N-sigma test results}
+    \begin{tabular}{@{}cccc@{}}
+      \toprule
+       $N_{\sigma_{room}} $& $N_{\sigma_{nitrogen}}$ \\
+      \midrule
+      $1.716$ & $0.4715$ \\
+      \bottomrule
+    \end{tabular}
+    \caption{N-sigma test results}
+
+\end{table}
+Again we get very good results, well within or error range for the value of $V_{room}$. furthermore, the value of $V_{nitrogen}$ is also within the error range of the theoretical value, according to the $N_\sigma$ test.
+
+It is apperent that the polynimial fit described the data better than the linear fit, and that is expected. 
+\end{document}
