@@ -1,24 +1,185 @@
-\documentclass[12pt,a4paper]{article}
-
-% ----------- PACKAGES -----------
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{lmodern}                 % nice Latin‑modern fonts
-\usepackage{amsmath, amssymb, amsfonts}
-\usepackage{bm}                      % bold math symbols
-\usepackage{graphicx}
-\usepackage{caption}
-\usepackage{array, booktabs}         % nicer tables
+\documentclass{article}
+\usepackage{amsmath}
 \usepackage{geometry}
 \geometry{margin=1in}
 
-% optional—remove if you don’t need hyperlinks
-\usepackage[colorlinks=true,
-            linkcolor=blue,
-            citecolor=blue,
-            urlcolor=blue]{hyperref}
-
-% ----------- DOCUMENT -----------
 \begin{document}
 
+\section*{Lecture Summary: Creation, Recombination, and Continuity Equations in Semiconductors}
+
+This lecture discusses the behavior of charge carriers (electrons and holes) in semiconductors, focusing on their creation and recombination processes, described by continuity equations.
+
+\section*{Key Concepts}
+
+\subsection*{1. Creation and Recombination Processes}
+\textbf{Generation (Creation):}
+Generation refers to the process where charge carriers (electrons and holes) are created, increasing their number within the conduction and valence bands.
+
+\textbf{Recombination:}
+Recombination is the opposite process, where electrons from the conduction band recombine with holes in the valence band, thereby reducing the number of charge carriers.
+
+These processes are quantified by rates:
+\begin{itemize}
+\item Generation rate ($G$): Number of charge carriers created per unit time per unit volume.
+\item Recombination rate ($R$): Number of charge carriers recombining per unit time per unit volume.
+\end{itemize}
+
+\subsection*{2. Continuity Equation}
+The continuity equation describes how the number of charge carriers changes with time in a given volume.
+
+General form:
+\[
+\frac{dC}{dt} = -\frac{d\Phi}{dx} + (G - R)
+\]
+where $C$ is the carrier concentration and $\Phi$ is the flux.
+
+Specific continuity equations:
+
+For holes:
+\[
+\frac{dp}{dt} = -\frac{1}{q}\frac{dJ_p}{dx} + (G_p - R_p)
+\]
+
+For electrons:
+\[
+\frac{dn}{dt} = \frac{1}{q}\frac{dJ_n}{dx} + (G_n - R_n)
+\]
+where $J_p$ and $J_n$ are current densities and $q$ is the elementary charge.
+
+\subsection*{3. Current Density Equations (Drift-Diffusion Equations)}
+These currents consist of drift (due to electric field $\vec{E}$) and diffusion (due to concentration gradients):
+
+Hole current density:
+\[
+J_p = -qD_p\frac{dp}{dx} + q\mu_p p(x)\vec{E}
+\]
+Electron current density:
+\[
+J_n = qD_n\frac{dn}{dx} + q\mu_n n(x)\vec{E}
+\]
+where $D_p$, $D_n$ are diffusion coefficients and $\mu_p$, $\mu_n$ are mobilities.
+
+\subsection*{4. Generation Processes (Creation)}
+Charge carriers can be generated through:
+\begin{itemize}
+\item Band-to-band transition
+\item Generation-recombination centers (traps)
+\item Impact ionization
+\end{itemize}
+
+\textbf{Beer-Lambert Law (Optical Generation):}
+\[
+I(x) = I_0 e^{-\alpha(\nu)x}, \quad G_{opt}(x) = \frac{I_0\alpha}{h\nu} e^{-\alpha(\nu)x}
+\]
+
+\subsection*{5. Recombination Processes}
+Charge carriers recombine via:
+\begin{itemize}
+\item Direct recombination
+\item Recombination via traps (R-G centers)
+\item Auger recombination
+\end{itemize}
+
+The lifetime of carriers depends on recombination mechanisms and impurity concentrations.
+
+\subsection*{6. Equilibrium Conditions}
+In equilibrium:
+\[
+G_{th} = R_{th} = \alpha_r n_0 p_0
+\]
+Carrier lifetimes ($\tau_n$, $\tau_p$) inversely relate to equilibrium carrier densities.
+
+\subsection*{7. Low-Level Injection Conditions}
+Under low-level injection (e.g., n-type):
+\[
+\delta p = p - p_0 \ll n_0
+\]
+Net generation:
+\[
+G_{net} = g - \frac{\delta p}{\tau_p}
+\]
+Continuity equations simplify:
+\[
+\frac{d(\delta p)}{dt} = D_p \frac{d^2(\delta p)}{dx^2} - \mu_p \frac{d((\delta p)E)}{dx} + g - \frac{\delta p}{\tau_p}
+\]
+
+\subsection*{8. Steady-State Example (Constant Illumination)}
+Under steady-state illumination:
+\[
+\delta p(x) = \Delta p e^{-\frac{x}{L_p}}, \quad L_p = \sqrt{D_p\tau_p}
+\]
+
+\subsection*{9. Surface Recombination Example}
+Surface recombination boundary condition:
+\[
+J_p\big|_{x=0} = q S_p \delta p(x=0)
+\]
+This influences the carrier distribution.
+
+\subsection*{10. Shockley-Read-Hall (SRH) Model}
+General recombination-generation model:
+\[
+G_{net} = g - \frac{pn - n_i^2}{\tau_p(n+n_1) + \tau_n(p+p_1)}
+\]
+Simplifies under low-level injection.
+
+\section*{Problem 1 Solution}
+
+Two infinite conducting planes parallel to each other are located at $z = 0$ and $z = d$. The planes are grounded. A point charge $q$ is placed at $z = a$, where $0 < a < d$.
+
+\subsection*{(a) Potential for $z < 0$ and $z > d$}
+
+Since both conducting planes are grounded, we have boundary conditions:
+\begin{align}
+\phi(z = 0) = 0 \quad \text{and} \quad \phi(z = d) = 0
+\end{align}
+
+For $z < 0$ and $z > d$, we are outside the region between the two conducting planes. Since the planes are conducting and grounded, they completely shield the electric field from the point charge. By the uniqueness theorem of electrostatics, the potential in these regions must be identically zero:
+\begin{align}
+\phi(z < 0) = 0\\
+\phi(z > d) = 0
+\end{align}
+
+\subsection*{(b) Potential between the planes ($0 < z < d$)}
+
+For the region between the planes, we need to find the potential due to the point charge $q$ at $z = a$, while satisfying the boundary conditions that $\phi = 0$ at $z = 0$ and $z = d$.
+
+This is a classic problem that can be solved using the method of images. The point charge $q$ at $z = a$ will induce an infinite series of image charges to maintain the grounded condition of both planes.
+
+The image charges will be positioned at:
+\begin{itemize}
+\item $z = -a$, with charge $-q$ (image in first plane)
+\item $z = 2d-a$, with charge $-q$ (image in second plane)
+\item $z = 2d+a$, with charge $q$ (image of image)
+\item $z = -2d+a$, with charge $q$ (image of image)
+\end{itemize}
+
+This pattern continues with images at $z = \pm 2nd \pm a$ with appropriate signs.
+
+The potential at any point $z$ (where $0 < z < d$) can be expressed as:
+\begin{align}
+\phi(z) &= \frac{1}{4\pi\varepsilon_0}\left[\frac{q}{|z-a|} - \frac{q}{|z+a|} - \frac{q}{|z-(2d-a)|} + \frac{q}{|z-(2d+a)|} + \ldots\right]\\
+&= \frac{q}{4\pi\varepsilon_0}\left[\frac{1}{|z-a|} - \frac{1}{|z+a|} - \frac{1}{|z-(2d-a)|} + \frac{1}{|z-(2d+a)|} + \ldots\right]
+\end{align}
+
+More systematically, this can be written as:
+\begin{align}
+\phi(z) = \frac{q}{4\pi\varepsilon_0}\left[\frac{1}{|z-a|} - \frac{1}{|z+a|} + \sum_{n=1}^{\infty}(-1)^n\left(\frac{1}{|z-(2nd-a)|} + \frac{1}{|z-(2nd+a)|} - \frac{1}{|z+2nd-a|} - \frac{1}{|z+2nd+a|}\right)\right]
+\end{align}
+
+We can verify that this expression satisfies the boundary conditions:
+\begin{align}
+\phi(z=0) &= 0\\
+\phi(z=d) &= 0
+\end{align}
+
+\subsection*{(c) Proving the solution is finite}
+
+To prove that the potential between the planes is finite, we need to show that the infinite series converges everywhere in the region $0 < z < d$, except at $z = a$ where the point charge is located.
+
+At $z = a$, the first term in our expression $\frac{1}{|z-a|}$ becomes singular, which is expected for a point charge. However, at any other point in the region, all terms in the series are finite.
+
+For large $n$, the terms in the series behave asymptotically as $\frac{1}{2nd}$, forming a convergent series. Therefore, the potential is finite at all points in the region $0 < z < d$ except at the exact location of the charge ($z = a$).
+
+The finiteness of the solution also follows from the physical understanding of the problem: we expect the electric potential to be well-defined everywhere except at the location of a point charge.
 \end{document}

@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[12pt,a4paper]{report}
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{enumitem}
 \usepackage{hyperref}
@@ -33,10 +33,17 @@
 \tableofcontents
 \pagebreak
 %--------------------------
+
+%================================
+%==========CHAPTER 1
+%================================
+\chapter{First part}
+
+
 \section{theoretical background}
-\begin{abstract}
-  The thermoelectric phenomenon was discovered by Thomas Johann Seebeck in the early 1820s. Seebeck observed that when two different metals are joined together at two junctions, forming a closed loop, and these junctions are maintained at different temperatures, an electric current flows through the circuit. Initially, Seebeck mistakenly attributed this effect to magnetic polarization of the metals, but later it was correctly understood as an electromotive force (voltage) generated due to the temperature difference.
-\end{abstract}
+
+The thermoelectric phenomenon was discovered by Thomas Johann Seebeck in the early 1820s. Seebeck observed that when two different metals are joined together at two junctions, forming a closed loop, and these junctions are maintained at different temperatures, an electric current flows through the circuit. Initially, Seebeck mistakenly attributed this effect to magnetic polarization of the metals, but later it was correctly understood as an electromotive force (voltage) generated due to the temperature difference.
+\\
 
 This voltage arises due to thermoelectric properties which depend on the interactions between heat flow and the behavior of electric charge carriers in metals. The phenomenon is broadly categorized under thermoelectric effects, with the Seebeck effect being one of the three primary effects:
 
@@ -78,6 +85,94 @@ In this laboratory, we will investigate the thermocouple's behavior by measuring
 
 Here, $R$ is the resistance at temperature $T$, $R_0$ is the resistance at reference temperature $T_0$, and $\alpha$ is a material-dependent constant.
 
+ 
+%--------------------------
+% Methodology section inserted here
+%--------------------------
+\section{Methodology}
+\subsection{Materials}
+\begin{itemize}[leftmargin=2em]
+    \item Dewar vessel filled with liquid nitrogen and enclosed with a light cover.
+    \item Dewar vessel filled with ice water (about $0^\circ$C) and enclosed with a light cover.
+    \item Cup of ice flakes.
+    \item Rod used for mixing.
+    \item Flask filled with ethanol connected to a mixing rod and a handle.
+    \item Electric kettle.
+    \item Stand.
+    \item Cup for hot water and system for dipping sensors.
+    \item Thermocouple of type K. (see \ref{fig:thermocouple})
+    \item Digital voltmeter with a measurement range of 200[mV].
+    \item Temperature sensor PT-100 ($-200^\circ$C to $+400^\circ$C) with a resolution of $0.188^\circ$C.
+    \item Multi-Log logger.
+    \item Thermal insulation gloves.
+\end{itemize} 
+
+\subsection{Experimental Procedure}
+\subsubsection{General Directions}
+\begin{enumerate}
+    \item Be sure to wipe any probe that you move into a different liquid.
+    \item Mix the liquid after heating/cooling it.
+    \item Be careful of liquid nitrogen and boiling water; use gloves when needed.
+    \item Always keep the reference probe of the type K thermocouple inside the icy water container.
+\end{enumerate}
+
+\subsubsection{Preparation for Measurements}
+First, open the Multilab software and turn on the multilog device. Configure the temperature sensor in Multilab to measure temperature every second continuously. Next, activate the voltmeter connected to the thermocouple.
+
+\subsubsection{Part A}
+Initially, measure room temperature and ice water temperature with the temperature sensor. Then measure the thermoelectric voltage when both probes are placed in ice water.
+
+Boil water using the electric kettle, transfer it into the measurement cup, and immerse both thermocouple and temperature sensor probes. After stabilization, record temperature and voltage. Gradually add ice flakes, stirring to melt, taking additional measurements until the water temperature reaches approximately $10^\circ$C. Obtain at least 20 measurements.
+
+\subsubsection{Part B}
+Begin by measuring the temperature of liquid nitrogen. Place both probes into the ethanol flask, and after stabilization, record initial voltage and temperature. Then, briefly immerse the flask in liquid nitrogen, mixing thoroughly after each immersion, and record stabilized measurements until the ethanol reaches approximately $-100^\circ$C. Collect at least 12 measurements.
+
+\section{Data Processing Plan}
+\subsection{Part A}
+Calculate voltage uncertainty as:
+\begin{equation}
+    \Delta V = 3 \times 10^{-4} \cdot |V| + 2 \times 10^{-2}  
+\end{equation}
+Given the sensor resolution ($0.188^\circ$C), the temperature uncertainty is:
+\[
+\Delta T = 0.054^\circ\text{C}
+\]
+Fit voltage linearly as:
+\[
+y = a_0 + a_1 x
+\]
+Expecting $a_0 \approx 0$ V, identify $k_{\text{exp}} = a_1$.
+
+Determine voltages at room temperature and nitrogen temperature by interpolation and extrapolation, respectively. Uncertainty is calculated by:
+\[
+\Delta(\Delta T) = \sqrt{(\Delta T \cdot \Delta a_1)^2 + (\Delta a_0)^2}
+\]
+
+Conduct $N_\sigma$ tests for comparisons:
+\[
+N_\sigma\{k_{\text{theo}}, k_{\text{exp}}\}, \quad
+N_\sigma\{V_{\text{room temp, measured}}, V_{\text{room temp, exp,1}}\}, \quad
+N_\sigma\{V_{\text{nitro, measured}}, V_{\text{nitro, exp,1}}\}
+\]
+
+\subsection{Part B}
+Fit voltage to a third-order polynomial:
+\[
+y = a_0 + a_1 x + a_2 x^2 + a_3 x^3
+\]
+Again, expect $a_0 \approx 0$ V.
+
+Calculate voltages at room and nitrogen temperatures by polynomial fit interpolation/extrapolation. Uncertainty calculation is:
+\[
+\Delta(\Delta T) = \sqrt{(\Delta T^3 \cdot \Delta a_3)^2 + (\Delta T^2 \cdot \Delta a_2)^2 + (\Delta T \cdot \Delta a_1)^2 + (\Delta a_0)^2}
+\]
+
+Perform $N_\sigma$ tests:
+\[
+N_\sigma\{V_{\text{room temp, measured}}, V_{\text{room temp, exp,2}}\}, \quad
+N_\sigma\{V_{\text{nitro, measured}}, V_{\text{nitro, exp,2}}\}
+\]
+
 \pagebreak
 %--------------------------
 \section{Data analysis}
@@ -113,12 +208,12 @@ After the aquired data is fitted to the expectd linear fit the results are as fo
       \toprule
       $\chi ^2_{reduced}$ & P-probabilty & $a_1$ & $a_0$ \\
       \midrule
-      $1.148$ & $0.327$ & $4.322 \cdot 10^{-2} \pm 2.794 \cdot 10^{-4}$ & $-0.09 \pm 0.012$ \\
+      $1.148$ & $0.327$ & $4.322 \cdot 10^{-2} \pm 2.794 \cdot 10^{-4} (0.6\%)$ & $-0.09 \pm 0.012 (13.3\%)$ \\
       \bottomrule
     \end{tabular}
     \caption{Part A results}
   \end{table}
-Note that the results were fitted after removing the points arround  $\Delta T = 70$ because they showed a dramatic non linear behavior and a parabolic shape in the residual graph, that hints that it was most likely due to user error.
+Note that the results were fitted after removing the points arround  $\Delta T = 50$ because they showed a dramatic non linear behavior and a parabolic shape in the residual graph, that hints that it was most likely due to user error.
 Taking that into considaraton we see that the ersults agree well with the theoretical model.
 
 Now extracting the values of $V_{room}$ and $V_{nitrogen}$ using interpolation and extrapolation respectively, we get: 
@@ -129,7 +224,7 @@ Now extracting the values of $V_{room}$ and $V_{nitrogen}$ using interpolation a
       \toprule
        $V_{room}$ & $V_{nitrogen}$ \\
       \midrule
-      $0.864 \pm 1.727 \cdot 10^{-7}$ & $-8.550 \pm 1.529 \cdot 10^{-6}$ \\
+      $0.864 \pm 1.727 \cdot 10^{-7} (2 \cdot 10^{-5} \%)$ & $-8.550 \pm 1.529 \cdot 10^{-6} (1.8 \cdot 10^{-5} \%)$ \\
       \bottomrule
     \end{tabular}
     \caption{Tempreture results}
@@ -193,10 +288,10 @@ After fitting the data to the third order polynomial we get the following result
       \toprule
       $\chi ^2_{reduced}$ & P-probabilty & $a_0$ & $a_1$ & $a_2$ & $a_3$ \\
       \midrule
-      1.197 & 0.2918 & $-0.02884 \pm 0.01377$ & $(3.8503 \times 10^{-2}) \pm (1.106 \times 10^{-3})$ & $(-1.969 \times 10^{-6}) \pm (2.7777 \times 10^{-5})$ & $(-3.552 \times 10^{-7}) \pm (1.861 \times 10^{-7})$ \\
+      1.197 & 0.2918 & $(-0.02884) \pm (0.01377)(47\%)$ & $(3.8503 \times 10^{-2}) \pm (1.106 \times 10^{-3})(2.8\%)$ & $(-1.969 \times 10^{-6}) \pm (2.7777 \times 10^{-5})(140\%)$ & $(-3.552 \times 10^{-7}) \pm (1.861 \times 10^{-7})(52\%)$ \\
       \bottomrule
     \end{tabular}
-    }%
+    }
     \caption{Part B results}
   \end{table}
   We can see that the $\chi _{reduced}^2$ is close to 1, and the P-probabilty is greater than 0.05, that means that the fit is good and we can use it as an acurate way to measure the voltage for different tempretures. furthermore, $a_0$ is close to 0 taking into consieration its $47.7 \%$ error. 
@@ -210,7 +305,7 @@ After fitting the data to the third order polynomial we get the following result
       \toprule
        $V_{room}$ & $V_{nitrogen}$ \\
       \midrule
-      $0.8162 \pm 0.0312$ & $-4.976 \pm 1.7687$ \\
+      $0.8162 \pm 0.0312 (3.8 \%)$ & $-4.976 \pm 1.7687 (35.5 \%)$ \\
       \bottomrule
     \end{tabular}
     \caption{Tempreture results}
@@ -234,4 +329,79 @@ And performing the $N_\sigma$ test on both voltages we get:
 Again we get very good results, well within or error range for the value of $V_{room}$. furthermore, the value of $V_{nitrogen}$ is also within the error range of the theoretical value, according to the $N_\sigma$ test.
 
 It is apperent that the polynimial fit described the data better than the linear fit, and that is expected. 
+
+\pagebreak
+\section{discussion}
+
+\subsection{Part A}
+In Part A, a linear regression over moderate temperature differences yielded a Seebeck coefficient of 
+$a_1 = (4.322 \pm 0.028)\times10^{-2}\,\mathrm{mV\,K^{-1}}$ with reduced chi-squared 
+$\chi^2_{reduced} = 1.148$ and $P = 0.327$, indicating a statistically satisfactory fit in the restricted range. 
+The interpolated room-temperature voltage, $V_{\mathrm{room}} = 0.864 \pm 1.7\times10^{-7}\,\mathrm{V}$, 
+agrees within $0.08\,\sigma$ of the theoretical expectation, confirming linearity near ambient conditions. 
+However, the extrapolated liquid-nitrogen value deviates by $150\,\sigma$, demonstrating that the linear 
+model breaks down at large $\Delta T$ due to the temperature dependence of the Seebeck coefficient and 
+nonideal measurement effects.
+
+
+\subsection{Part B}
+In Part B, a third-order polynomial fit captures the full temperature span with 
+$\chi^2_{reduced} = 1.197$ and $P = 0.292$, showing that higher-order terms are necessary to model the 
+observed nonlinearity. The extracted voltages, $V_{\mathrm{room}} = 0.816 \pm 0.031\,\mathrm{V}$ and 
+$V_{\mathrm{nitrogen}} = -4.976 \pm 1.769\,\mathrm{V}$, both fall within $3\,\sigma$ of their theoretical 
+values, validating the polynomial calibration. This improved model provides an accurate calibration curve, highlighting the limitations of simple linear approximations 
+across wide temperature ranges.
+
+\pagebreak
+\appendix
+
+\section{Appendix: Figures}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{general IMG/Kthermo.png}
+    \caption{Thermocouple}
+    \label{fig:thermocouple}
+\end{figure}
+
+\section{Appendix: Figures}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Part A results/full set linear fit.png}
+    \caption{linear fit  and residual of the unmodifyed set, part A}
+    \label{fig:appendix_partA_full_set_fit}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Part A results/linear fit.png}
+    \caption{Linear fit for Part A}
+    \label{fig:appendix_partA_linear_fit}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Part A results/res.png}
+    \caption{Residual fit for Part A}
+    \label{fig:appendix_partA_residual_fit}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Part B results/polynomial-fit.png}
+    \caption{Polynomial fit for Part B}
+    \label{fig:appendix_partB_polynomial_fit}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Part B results/polynomial residual.png}
+    \caption{Residual fit for Part B}
+    \label{fig:appendix_partB_residual_fit}
+\end{figure}
+
+
+
 \end{document}
