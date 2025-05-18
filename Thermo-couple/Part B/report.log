@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.6)  18 MAY 2025 11:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.6)  18 MAY 2025 21:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -441,30 +441,81 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
-Chapter 1.
+Chapter 2.
 [2
 
-] [3] (./report.aux)
+] [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+LaTeX Warning: Reference `exp theo' on page 4 undefined on input line 119.
+
+
+LaTeX Warning: Reference `exp theo' on page 4 undefined on input line 121.
+
+
+LaTeX Warning: Reference `exp fit' on page 4 undefined on input line 124.
+
+
+LaTeX Warning: Reference `exp theo' on page 4 undefined on input line 124.
+
+
+LaTeX Warning: Reference `b' on page 4 undefined on input line 124.
+
+
+LaTeX Warning: Reference `exp theo' on page 4 undefined on input line 125.
+
+
+LaTeX Warning: Reference `exp theo' on page 4 undefined on input line 127.
+
+
+LaTeX Warning: Reference `h_air A_air=...' on page 4 undefined on input line 130.
+
+[4]
+<with lid/cooling fit.png, id=109, 594.22pt x 488.82625pt>
+File: with lid/cooling fit.png Graphic file (type png)
+<use with lid/cooling fit.png>
+Package pdftex.def Info: with lid/cooling fit.png  used on input line 145.
+(pdftex.def)             Requested size: 217.42265pt x 178.86389pt.
+<with lid/residuals fit.png, id=111, 626.34pt x 481.8pt>
+File: with lid/residuals fit.png Graphic file (type png)
+<use with lid/residuals fit.png>
+Package pdftex.def Info: with lid/residuals fit.png  used on input line 151.
+(pdftex.def)             Requested size: 217.42265pt x 167.2504pt.
+ [5 <./with lid/cooling fit.png> <./with lid/residuals fit.png>]
+<no lid/cooling fit.png, id=120, 598.235pt x 464.73625pt>
+File: no lid/cooling fit.png Graphic file (type png)
+<use no lid/cooling fit.png>
+Package pdftex.def Info: no lid/cooling fit.png  used on input line 175.
+(pdftex.def)             Requested size: 217.42265pt x 168.90755pt.
+<no lid/residuals fit.png, id=121, 622.325pt x 461.725pt>
+File: no lid/residuals fit.png Graphic file (type png)
+<use no lid/residuals fit.png>
+Package pdftex.def Info: no lid/residuals fit.png  used on input line 181.
+(pdftex.def)             Requested size: 217.42265pt x 161.31026pt.
+ [6 <./no lid/cooling fit.png> <./no lid/residuals fit.png>] [7] (./report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: D54D7E89383E96B90A2A0E764EDC8B45;1352.
+(rerunfilecheck)             Checksum: F215C870835CF296B07270D6361C973C;2186.
  ) 
 Here is how much of TeX's memory you used:
- 12458 strings out of 474116
- 195093 string characters out of 5743682
- 1934187 words of memory out of 5000000
- 34630 multiletter control sequences out of 15000+600000
- 571657 words of font info for 71 fonts, out of 8000000 for 9000
+ 12554 strings out of 474116
+ 197155 string characters out of 5743682
+ 1935187 words of memory out of 5000000
+ 34705 multiletter control sequences out of 15000+600000
+ 572763 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,79p,622b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (3 pages, 151185 bytes).
+ 75i,11n,79p,659b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on report.pdf (7 pages, 536383 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
