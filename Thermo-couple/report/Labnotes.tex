@@ -208,7 +208,7 @@ After the aquired data is fitted to the expectd linear fit the results are as fo
       \toprule
       $\chi ^2_{reduced}$ & P-probabilty & $a_1$ & $a_0$ \\
       \midrule
-      $1.148$ & $0.327$ & $4.322 \cdot 10^{-2} \pm 2.794 \cdot 10^{-4} (0.6\%)$ & $-0.09 \pm 0.012 (13.3\%)$ \\
+      $1.1$ & $0.33$ & $4.32 \cdot 10^{-2} \pm 2.79 \cdot 10^{-4} (0.6\%)$ & $-0.09 \pm 0.01 (13.3\%)$ \\
       \bottomrule
     \end{tabular}
     \caption{Part A results}
@@ -354,7 +354,8 @@ across wide temperature ranges.
 
 \pagebreak
 \appendix
-
+\setcounter{figure}{0}
+\setcounter{table}{0}
 \section{Appendix: Figures}
 
 \begin{figure}[H]
@@ -363,8 +364,6 @@ across wide temperature ranges.
     \caption{Thermocouple}
     \label{fig:thermocouple}
 \end{figure}
-
-\section{Appendix: Figures}
 
 \begin{figure}[H]
     \centering
@@ -402,6 +401,61 @@ across wide temperature ranges.
     \label{fig:appendix_partB_residual_fit}
 \end{figure}
 
+\pagebreak
 
+\section{Appendix: tables}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+$T[C]$ & $V[mV]$  & $\Delta V$     \\
+82.108   & 3.44       & 0.021032 \\ \hline
+76.708   & 3.18       & 0.020954 \\ \hline
+72.3     & 2.97       & 0.020891 \\ \hline
+69.008   & 2.81       & 0.020843 \\ \hline
+64.217   & 2.69       & 0.020807 \\ \hline
+55.51    & 2.59       & 0.020777 \\ \hline
+51.33    & 2.49       & 0.020747 \\ \hline
+48.36    & 2.39       & 0.020717 \\ \hline
+48.74    & 2.25       & 0.020675 \\ \hline
+46.84    & 2.08       & 0.020624 \\ \hline
+44.56    & 1.87       & 0.020561 \\ \hline
+40.76    & 1.7        & 0.02051  \\ \hline
+37.533   & 1.6        & 0.02048  \\ \hline
+33.013   & 1.36       & 0.020408 \\ \hline
+28.287   & 1.1        & 0.02033  \\ \hline
+25.65    & 1          & 0.0203   \\ \hline
+24.332   & 0.95       & 0.020285 \\ \hline
+23.39    & 0.92       & 0.020276 \\ \hline
+17.72    & 0.69       & 0.020207 \\ \hline
+7.533    & 0.24       & 0.020072 \\ \hline
+
+\end{tabular}
+\caption{first set of measurments}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{T} & \textbf{V}  \\ \hline
+\textbf{6.592}    & \textbf{0.22}       \\ \hline
+\textbf{-4.96}    & \textbf{-0.21}      \\ \hline
+\textbf{-19.067}  & \textbf{-0.77}      \\ \hline
+\textbf{-25.93}   & \textbf{-1.02}      \\ \hline
+\textbf{-32.045}  & \textbf{-1.25}      \\ \hline
+\textbf{-41.675}  & \textbf{-1.6}       \\ \hline
+\textbf{-49.079}  & \textbf{-1.88}      \\ \hline
+\textbf{-58.533}  & \textbf{-2.26}      \\ \hline
+\textbf{-73.217}  & \textbf{-2.69}      \\ \hline
+\textbf{-79.633}  & \textbf{-2.91}      \\ \hline
+\textbf{-87.457}  & \textbf{-3.18}      \\ \hline
+\textbf{-96.58}   & \textbf{-3.47}      \\ \hline
+\textbf{-104.24}  & \textbf{-3.65}      \\ \hline
+\end{tabular}
+
+\caption{Second set of meassurments}
+\end{table}
 
 \end{document}

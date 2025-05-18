@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.6)  18 MAY 2025 16:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.6)  18 MAY 2025 11:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/eliehabib/Desktop/school/Lab/Reports/Lab-Reports/Thermo-couple/report/Labnotes.tex
-(/Users/eliehabib/Desktop/school/Lab/Reports/Lab-Reports/Thermo-couple/report/Labnotes.tex
+**"/Users/eliehabib/Desktop/school/Lab/Reports/Lab-Reports/Thermo-couple/Part B/report.tex"
+(/Users/eliehabib/Desktop/school/Lab/Reports/Lab-Reports/Thermo-couple/Part B/report.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/report.cls
@@ -331,36 +331,32 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks35
 \@floatcapt=\box55
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+Package hyperref Info: Option `colorlinks' set `true' on input line 24.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count301
 \l__pdf_internal_box=\box56
-) (./Labnotes.aux
+) (./report.aux)
+\openout1 = `report.aux'.
 
-LaTeX Warning: Label `tab:partA_summary' multiply defined.
-
-)
-\openout1 = `Labnotes.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -368,10 +364,10 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 29.
- (./Labnotes.out) (./Labnotes.out)
+Package hyperref Info: Link coloring ON on input line 26.
+ (./report.out) (./report.out)
 \@outlinefile=\write3
-\openout3 = `Labnotes.out'.
+\openout3 = `report.out'.
 
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -429,111 +425,46 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+(./report.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./Labnotes.toc)
+))
 \tf@toc=\write4
-\openout4 = `Labnotes.toc'.
+\openout4 = `report.toc'.
+
+ [1
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.36 
-      [1
-
-]
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 Chapter 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
-
- []
-
 [2
 
-] [3{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [4] [5]
-<Part A results/linear fit.png, id=136, 590.205pt x 468.75125pt>
-File: Part A results/linear fit.png Graphic file (type png)
-<use Part A results/linear fit.png>
-Package pdftex.def Info: Part A results/linear fit.png  used on input line 187.
-(pdftex.def)             Requested size: 217.42265pt x 172.67706pt.
-<Part A results/res.png, id=138, 643.40375pt x 471.7625pt>
-File: Part A results/res.png Graphic file (type png)
-<use Part A results/res.png>
-Package pdftex.def Info: Part A results/res.png  used on input line 193.
-(pdftex.def)             Requested size: 217.42265pt x 159.41812pt.
- [6 <./Part A results/linear fit.png> <./Part A results/res.png>]
-<Part B results/polynomial-fit.png, id=151, 593.21625pt x 467.7475pt>
-File: Part B results/polynomial-fit.png Graphic file (type png)
-<use Part B results/polynomial-fit.png>
-Package pdftex.def Info: Part B results/polynomial-fit.png  used on input line 266.
-(pdftex.def)             Requested size: 217.42265pt x 171.43657pt.
-<Part B results/polynomial residual.png, id=152, 627.34375pt x 472.76625pt>
-File: Part B results/polynomial residual.png Graphic file (type png)
-<use Part B results/polynomial residual.png>
-Package pdftex.def Info: Part B results/polynomial residual.png  used on input line 272.
-(pdftex.def)             Requested size: 217.42265pt x 163.84755pt.
- [7 <./Part B results/polynomial-fit.png> <./Part B results/polynomial residual.png>] [8] [9]
-<general IMG/Kthermo.png, id=174, 472.76625pt x 394.47375pt>
-File: general IMG/Kthermo.png Graphic file (type png)
-<use general IMG/Kthermo.png>
-Package pdftex.def Info: general IMG/Kthermo.png  used on input line 363.
-(pdftex.def)             Requested size: 226.48395pt x 188.97807pt.
-<Part A results/full set linear fit.png, id=175, 1215.54124pt x 481.8pt>
-File: Part A results/full set linear fit.png Graphic file (type png)
-<use Part A results/full set linear fit.png>
-Package pdftex.def Info: Part A results/full set linear fit.png  used on input line 370.
-(pdftex.def)             Requested size: 317.07614pt x 125.67673pt.
-File: Part A results/linear fit.png Graphic file (type png)
-<use Part A results/linear fit.png>
-Package pdftex.def Info: Part A results/linear fit.png  used on input line 378.
-(pdftex.def)             Requested size: 317.07614pt x 251.82729pt.
- [10 <./general IMG/Kthermo.png> <./Part A results/full set linear fit.png>]
-File: Part A results/res.png Graphic file (type png)
-<use Part A results/res.png>
-Package pdftex.def Info: Part A results/res.png  used on input line 385.
-(pdftex.def)             Requested size: 317.07614pt x 232.49736pt.
-File: Part B results/polynomial-fit.png Graphic file (type png)
-<use Part B results/polynomial-fit.png>
-Package pdftex.def Info: Part B results/polynomial-fit.png  used on input line 392.
-(pdftex.def)             Requested size: 317.07614pt x 250.01761pt.
- [11]
-File: Part B results/polynomial residual.png Graphic file (type png)
-<use Part B results/polynomial residual.png>
-Package pdftex.def Info: Part B results/polynomial residual.png  used on input line 399.
-(pdftex.def)             Requested size: 317.07614pt x 238.95787pt.
- [12] [13] (./Labnotes.aux)
+] [3] (./report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `Labnotes.out' has not changed.
-(rerunfilecheck)             Checksum: C18B36D301531825A8DF476E5B039DC1;1706.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: D54D7E89383E96B90A2A0E764EDC8B45;1352.
  ) 
 Here is how much of TeX's memory you used:
- 12652 strings out of 474116
- 199181 string characters out of 5743682
- 1942187 words of memory out of 5000000
- 34763 multiletter control sequences out of 15000+600000
- 580425 words of font info for 96 fonts, out of 8000000 for 9000
+ 12458 strings out of 474116
+ 195093 string characters out of 5743682
+ 1934187 words of memory out of 5000000
+ 34630 multiletter control sequences out of 15000+600000
+ 571657 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,630b,593s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on Labnotes.pdf (14 pages, 772776 bytes).
+ 75i,6n,79p,622b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on report.pdf (3 pages, 151185 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 124 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 

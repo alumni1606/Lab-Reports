@@ -18,4 +18,4 @@
 \contentsline {subsection}{\numberline {1.5.1}Part A}{9}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.5.2}Part B}{9}{subsection.1.5.2}%
 \contentsline {section}{\numberline {.1}Appendix: Figures}{10}{section.Alph0.1}%
-\contentsline {section}{\numberline {.2}Appendix: Figures}{10}{section.Alph0.2}%
+\contentsline {section}{\numberline {.2}Appendix: tables}{13}{section.Alph0.2}%

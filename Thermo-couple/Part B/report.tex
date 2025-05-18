@@ -1,0 +1,87 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{bm}
+\usepackage[utf8]{inputenc}     % if you need it
+\usepackage[T1]{fontenc}        % if you need it
+% \usepackage{subcaption}         % defines the subfigure environment
+\usepackage{grffile}
+\usepackage{placeins}    
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{float}       % for [H]
+\usepackage{placeins}    % for \FloatBarrier
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    citecolor=black
+}
+
+\begin{document}
+
+\tableofcontents
+
+\chapter{Part B}
+%======================================
+\section{Theoretical background}
+
+% REPLACED theoretical background subsections 1-7 with new content:
+
+\subsection{Newton’s Law of Cooling: Fundamentals}
+Newton’s law of cooling asserts that the instantaneous rate of heat flow from a body to its surroundings is directly proportional to the temperature difference between them. Microscopically, this arises because the net energy exchanged per unit time depends on the frequency and energy of molecular collisions at the interface. Macroscopically, one writes
+\[
+\dot{Q} = -\,h\,A\,(T - T_E),
+\]
+where $\dot{Q} = \frac{dQ}{dt}$ is the heat flux from the body, $h$ the convective heat‐transfer coefficient, $A$ the exchange area, $T(t)$ the temperature of the body, and $T_E$ the ambient or environment temperature. The negative sign indicates that heat flows out when $T>T_E$.
+
+ When heat is transferred at a low enough rate one can consider that the body remains nearly isothermal during cooling, and one may treat its entire heat content as lumped into a single thermal capacitance $C=m\,c_p$. Applying conservation of energy to the body yields the ordinary differential equation
+\[
+C\,\frac{dT}{dt} = -\,h\,A\,(T - T_E),
+\]
+which relates the time‐rate change of the body’s temperature to the net heat flux.
+
+\subsection{Analytical Solution and Time Constant}
+To solve the ODE eparation of variables is used,
+\[
+\frac{dT}{T - T_E} = -\,\frac{h\,A}{C}\,dt,
+\]
+and integrating from the initial temperature $T_0$ at $t=0$ gives an exponential decay law:
+
+\begin{equation} \label{T_v_t_exponential}
+    T(t) - T_E = (T_0 - T_E)\,\exp\!\bigl(-t/\tau\bigr),
+\end{equation}
+
+with characteristic time constant
+\[
+\tau = \frac{C}{h\,A}.
+\]
+Physically, $\tau$ represents the time required for the temperature difference to diminish by a factor of $1/e$.
+
+\subsection{Two‐Path Cooling in Cup Experiments}
+In our open‐cup experiment, the hot water loses heat both through the styrofoam walls and by direct convection at the free surface. Writing each path as a conductance, according to thermodynamics defines the total conductance as
+\[
+U_{\rm tot} = h_{\rm cup}\,A_{\rm cup} + h_{\rm air}\,A_{\rm air},
+\]
+so that the cooling follows $C_w\,\frac{dT}{dt} = -\,U_{\rm tot}(T-T_E)$ with time constant $\tau_1=C_w/U_{\rm tot}$. In the insulated cooling process where the water is only cooled from heat exchange with the cup, surface convection is suppressed and only the cup conductance remains, giving $\tau_2=C_w/(h_{\rm cup}A_{\rm cup})$. Subtracting the reciprocals,
+\[
+\frac1{\tau_1} - \frac1{\tau_2} = \frac{h_{\rm air}A_{\rm aur}}{C_w},
+\]
+allows us to isolate the air conductance.
+
+\subsection{Parameter Extraction Procedure}
+ In this expirement the tempreture $\Delta T$ is measured at equally spaced intervals of time. Plotting $\ln(\Delta T )$ versus $t$ yields a straight line, according to \eqref{T_v_t_exponential} it's slope equals $-1/\tau$. By fitting both open‐cup and insulated data sets, one extracts $\tau_1$ and $\tau_2$ and then determines
+\[
+h_{\rm cup}A_{\rm cup} = \frac{C_w}{\tau_2},\qquad
+h_{\rm air}A_{\rm air} = C_w\Bigl(\tfrac1{\tau_1}-\tfrac1{\tau_2}\Bigr).
+\]
+Finally, dividing by known areas yields the heat transfer coefficients $h_{\rm cup}$ and $h_{\rm air}$, or inverting these relations gives $C_w$ if the coefficients are known.
+
+%======================================
+\section{Data analysis}
+\end{document}

@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Labnotebook"] 0 "Labnotebook.bcf" "Labnotebook.bbl" "Labnotebook" 1747485996.20096 0
+["biber Labnotebook"] 0 "Labnotebook.bcf" "Labnotebook.bbl" "Labnotebook" 1747559200.98901 0
   "Labnotebook.bcf" 0 -1 0 "pdflatex"
   "references.bib" 0 -1 0 ""
   (generated)
   "Labnotebook.bbl"
   "Labnotebook.blg"
   (rewritten before read)
-["pdflatex"] 1747485994.8682 "/Users/eliehabib/Desktop/school/Lab/Reports/Lab-Reports/Astrophysics/Notebook/Labnotebook.tex" "Labnotebook.pdf" "Labnotebook" 1747485996.20129 0
-  "/Users/eliehabib/Desktop/school/Lab/Reports/Lab-Reports/Astrophysics/Notebook/Labnotebook.tex" 1747485993.2406 5617 3e5669525265d36c8274249177149e91 ""
+["pdflatex"] 1747559199.67422 "/Users/eliehabib/Desktop/school/Lab/Reports/Lab-Reports/Astrophysics/Notebook/Labnotebook.tex" "Labnotebook.pdf" "Labnotebook" 1747559200.98935 0
+  "/Users/eliehabib/Desktop/school/Lab/Reports/Lab-Reports/Astrophysics/Notebook/Labnotebook.tex" 1747559198.0944 5654 9222abe2f9bc9ad822724f4975ee831e ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm" 1136768653 3584 21b378cca2e40816b0e6d74a4dc98f04 ""
@@ -160,12 +160,12 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1733502325.62042 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733502272 8221428 02dae383b74b35fe631bf389232375a8 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Labnotebook.aux" 1747485995.99956 675 9d4413772252eab53c20bb4b581b62ee "pdflatex"
+  "Labnotebook.aux" 1747559200.80661 783 10d9d48830eb28afce51531e7d0a7ec7 "pdflatex"
   "Labnotebook.bbl" 0 -1 0 "biber Labnotebook"
-  "Labnotebook.out" 1747485996.00074 340 44320e87494c8bde2065e868baf56cc0 "pdflatex"
-  "Labnotebook.run.xml" 1747485996.00437 2510 c181c9fd3b298dea9d026342cf031c22 "pdflatex"
-  "Labnotebook.tex" 1747485993.2406 5617 3e5669525265d36c8274249177149e91 ""
-  "Labnotebook.toc" 1747485996.00444 254 7589490431e8439496d5ee35e93ab7ee "pdflatex"
+  "Labnotebook.out" 1747559200.80781 438 5230356d53de6e6de38824bd609e7347 "pdflatex"
+  "Labnotebook.run.xml" 1747559200.81141 2510 c181c9fd3b298dea9d026342cf031c22 "pdflatex"
+  "Labnotebook.tex" 1747559198.0944 5654 9222abe2f9bc9ad822724f4975ee831e ""
+  "Labnotebook.toc" 1747559200.81147 321 4b1ee416ebb578e89b70ea4cdd170775 "pdflatex"
   (generated)
   "Labnotebook.aux"
   "Labnotebook.bcf"
