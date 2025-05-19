@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.6)  18 MAY 2025 12:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.6)  19 MAY 2025 13:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -747,24 +747,24 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./Labnotebook.aux)
 \openout1 = `Labnotebook.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 91.
+LaTeX Font Info:    ... okay on input line 91.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -814,7 +814,7 @@ Package siunitx Warning: Detected the "physics" package:
 (/usr/local/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 94.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 91.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count463
@@ -868,26 +868,26 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Labnotebook.bbl' not found.
 
 No file Labnotebook.bbl.
-Package biblatex Info: Reference section=0 on input line 94.
-Package biblatex Info: Reference segment=0 on input line 94.
-Package hyperref Info: Link coloring OFF on input line 94.
+Package biblatex Info: Reference section=0 on input line 91.
+Package biblatex Info: Reference segment=0 on input line 91.
+Package hyperref Info: Link coloring OFF on input line 91.
 (./Labnotebook.out) (./Labnotebook.out)
 \@outlinefile=\write4
 \openout4 = `Labnotebook.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 94.
-Package microtype Info: Applying patch `item' on input line 94.
-Package microtype Info: Applying patch `toc' on input line 94.
-Package microtype Info: Applying patch `eqnum' on input line 94.
-Package microtype Info: Applying patch `footnote' on input line 94.
-Package microtype Info: Applying patch `verbatim' on input line 94.
+LaTeX Info: Redefining \microtypecontext on input line 91.
+Package microtype Info: Applying patch `item' on input line 91.
+Package microtype Info: Applying patch `toc' on input line 91.
+Package microtype Info: Applying patch `eqnum' on input line 91.
+Package microtype Info: Applying patch `footnote' on input line 91.
+Package microtype Info: Applying patch `verbatim' on input line 91.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 94.
+LaTeX Info: Redefining \showhyphens on input line 91.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -917,8 +917,8 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.154 \section
-              {Methodology} [1
+l.151 \section
+              {Data analysis process} [1
 
 ] [2] (./Labnotebook.aux)
  ***********
@@ -926,21 +926,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `Labnotebook.out' has not changed.
-(rerunfilecheck)             Checksum: 5230356D53DE6E6DE38824BD609E7347;438.
+(rerunfilecheck)             Checksum: 0EE50A9C307DFC5B6976EFDF088C3320;494.
 Package logreq Info: Writing requests to 'Labnotebook.run.xml'.
 \openout1 = `Labnotebook.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31236 strings out of 474116
- 609033 string characters out of 5743682
+ 31234 strings out of 474116
+ 609009 string characters out of 5743682
  1935187 words of memory out of 5000000
  53202 multiletter control sequences out of 15000+600000
- 570971 words of font info for 95 fonts, out of 8000000 for 9000
+ 570908 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,5n,107p,1086b,5183s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on Labnotebook.pdf (4 pages, 141458 bytes).
+Output written on Labnotebook.pdf (4 pages, 141505 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1747595003.92314 "/Users/eliehabib/Desktop/school/Lab/Reports/Lab-Reports/Thermo-couple/report/Labnotes.tex" "Labnotes.pdf" "Labnotes" 1747595005.003 0
-  "/Users/eliehabib/Desktop/school/Lab/Reports/Lab-Reports/Thermo-couple/report/Labnotes.tex" 1747595002.58176 19581 06fbad4829e4e5e8f83389703e73c065 ""
+["pdflatex"] 1747647485.80135 "/Users/eliehabib/Desktop/school/Lab/Reports/Lab-Reports/Thermo-couple/report/Labnotes.tex" "Labnotes.pdf" "Labnotes" 1747647486.88595 0
+  "/Users/eliehabib/Desktop/school/Lab/Reports/Lab-Reports/Thermo-couple/report/Labnotes.tex" 1747647484.46143 19603 4935cc0581330592036f331d0d24be4f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -135,10 +135,10 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1733502325.62042 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1733502272 8221428 02dae383b74b35fe631bf389232375a8 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Labnotes.aux" 1747595004.90697 6966 819b1df9d36fc569d431f02ca05a1975 "pdflatex"
-  "Labnotes.out" 1747595004.90792 1706 c18b36d301531825a8df476e5b039dc1 "pdflatex"
-  "Labnotes.tex" 1747595002.58176 19581 06fbad4829e4e5e8f83389703e73c065 ""
-  "Labnotes.toc" 1747595004.90814 1474 e7ae1bcbc50ff053317db6b3e9aa3a07 "pdflatex"
+  "Labnotes.aux" 1747647486.78762 6966 43f5f7b0c3cf37f59521a38f0b69022c "pdflatex"
+  "Labnotes.out" 1747647486.78858 1706 c18b36d301531825a8df476e5b039dc1 "pdflatex"
+  "Labnotes.tex" 1747647484.46143 19603 4935cc0581330592036f331d0d24be4f ""
+  "Labnotes.toc" 1747647486.78881 1474 e7ae1bcbc50ff053317db6b3e9aa3a07 "pdflatex"
   "Part A results/full set linear fit.png" 1747422124.54177 244579 55f7494d04f29bf67362fdfe167f4d50 ""
   "Part A results/linear fit.png" 1747173050.38763 140414 026782b67b5f417c004124b084df1249 ""
   "Part A results/res.png" 1747173050.39066 121047 6e8afc21f383e2b25549780bfdf4e8ad ""
